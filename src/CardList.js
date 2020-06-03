@@ -1,8 +1,8 @@
 import React from 'react';
-import {upcs} from "./upcs";
+
 import Card from './Card'
 
-const CardList = () => {
+const CardList = ({upcs}) => { //{upcs} = const {upcs} = props.upcs
     return (
         <div>
             <Card id={upcs[0].id} productname={upcs[0].productname} upc={upcs[0].upc}/>

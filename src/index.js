@@ -4,11 +4,12 @@ import './index.css';
 import CardList from './CardList';
 import * as serviceWorker from './serviceWorker';
 import 'tachyons';
+import {upcs} from './upcs'
 
 
 ReactDOM.render(
     <div>
-        <CardList />
+        <CardList upcs={upcs}/>
     </div>,
   document.getElementById('root')
 );
