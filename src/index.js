@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Card from './Card';
 import * as serviceWorker from './serviceWorker';
+import 'tachyons';
+import {upcs} from './upcs'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <div>
+        <Card id={upcs[0].id} productname={upcs[0].productname} upc={upcs[0].upc}/>
+        <Card id={upcs[1].id} productname={upcs[1].productname} upc={upcs[1].upc}/>
+        <Card id={upcs[2].id} productname={upcs[2].productname} upc={upcs[2].upc}/>
+    </div>,
   document.getElementById('root')
 );
 
